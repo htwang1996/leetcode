@@ -76,7 +76,7 @@ public:
 		}
 		for (int i = 0; i < s.size(); i++)
 		{
-			m.insert
+			m.insert(s[i]);
 		}
 		return m.size();
 
