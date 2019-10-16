@@ -1,8 +1,12 @@
 {
     "files.associations": {
+<<<<<<< HEAD
         "string": "cpp",
         "deque": "cpp",
         "vector": "cpp",
         "functional": "cpp"
+=======
+        "ratio": "cpp"
+>>>>>>> 0f06f5a230ea6fc053ad806c29c8f42592e0915a
     }
 }
