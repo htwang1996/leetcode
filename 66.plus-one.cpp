@@ -6,19 +6,24 @@
 class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
-        vector<int> plus = digits;
         int size = digits.size();
-        if(plus(size-1) != 9)
-        {
-            plus(size-1) += 1;
+        int a =0;
+        for(int i = 0;i<size;i++){
+           a = a + digits[i] * pow(10,size-i-1);
         }
-        else
+        a = a+1;
+        int b =a;
+        int count = 0;
+        while(a)
         {
-            plus(size-2) += 1;
-            plus(size-1) = 0;
+            a/=10;
+            count++;
         }
-        
-        
+        vector<int> plus;
+        for(int i = 0;i<count;i++){
+            plus.push_back(int(b/pow(10,count-i-1))%10);
+        }
+        return plus;
     }
 };
 
